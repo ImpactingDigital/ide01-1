@@ -75,48 +75,52 @@
         <div class="row">
             <main role="main" class="col-md-12 col-lg-12 px-4">
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h1">Novo Contacto</h1>
+                    <h1 class="h1">Márcio Nogueira </h1>
                     <div class="btn-toolbar mb-2 mb-md-0">
                         <div class="btn-group mr-2">
                             <button class="btn btn-sm btn-outline-secondary">Gravar</button>
                             <button class="btn btn-sm btn-outline-secondary">Exportar</button>
+                            <a href="novo.html" class="btn btn-sm btn-outline-secondary">Novo</a>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="col-md-8 container">
+                <div class="col-md-12 col-lg-8 container">
                     <form>
                         <div class="mb-3">
-                            <label for="campanha">Campanha</label>
-                                <select class="custom-select d-block w-100" id="campanha" required>
+                            <label for="campanha">Status</label>
+                            <select class="custom-select d-block w-100" id="status" required>
                                   <option value="">Escolher...</option>
-                                  <option>Feira de Paris</option>
+                                  <option>Lead</option>
+                                  <option selected>Proposta</option>
+                                  <option>Qualificado</option>
+                                  <option>Não qualificado</option>
+                                </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="campanha">Campanha</label>
+                            <select class="custom-select d-block w-100" id="campanha" required>
+                                  <option value="">Escolher...</option>
+                                  <option selected>Feira de Paris</option>
                                   <option>Feira de Braga</option>
                                   <option>Evento no Porto</option>
                                   <option>Feira do Vinho em Lisboa</option>
                                   <option>Congresso em Florença</option>
                                 </select>
-                        </div>            
-                    </form>
-                    <form class="business card text-center" style="background-color:#fdd9ca; padding:15px"   action='lead-marcio.html'>
-                        <h4>Scan Business card</h4>
-                        <input style="margin:10px auto 0" type=file name=upfile size=20><br>
-                        <input class="btn btn-primary" type=submit value='Enviar'> 
-                    </form>
-                    <hr>
-                    <form class="needs-validation" novalidate>
+                        </div>
+                        <hr>
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label for="firstName">Nome</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="Márcio" required>
                                 <div class="invalid-feedback">
                                     Apenas nomes são aceitos.
                                 </div>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label for="lastName">Apelido <span class="text-muted">(Optional)</span></label>
-                                <input type="text" class="form-control" id="lastName" placeholder="" value="" >
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="Nogueira">
                                 <div class="invalid-feedback">
                                     É preciso um apelido válido.
                                 </div>
@@ -125,15 +129,15 @@
 
                         <div class="mb-3">
                             <label for="email">Email </label>
-                            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                            <input type="email" class="form-control" id="email" placeholder="marcio.nogueira@impacting.digital" required>
                             <div class="invalid-feedback">
                                 Please enter a valid email address for shipping updates.
                             </div>
                         </div>
-                        
+
                         <div class="mb-3">
                             <label for="mobile">Telemóvel </label>
-                            <input type="phone" class="form-control" id="mobile" placeholder="000 000 000" required>
+                            <input type="phone" class="form-control" id="mobile" placeholder="000 000 000" value="999 999 999">
                             <div class="invalid-feedback">
                                 Por favor, informe um número válido
                             </div>
@@ -141,7 +145,7 @@
 
                         <div class="mb-3">
                             <label for="role">Cargo</label>
-                            <input type="text" class="form-control" id="role" placeholder="" required>
+                            <input type="text" class="form-control" id="role" placeholder="" value="Diretor de Estrategia">
                             <div class="invalid-feedback">
                                 Please enter your role.
                             </div>
@@ -149,7 +153,7 @@
 
                         <div class="mb-3">
                             <label for="business">Empresa</label>
-                            <input type="text" class="form-control" id="business">
+                            <input type="text" class="form-control" id="business" value="Vinho Pixel">
                         </div>
 
                         <div class="row">
@@ -157,7 +161,7 @@
                                 <label for="country">País</label>
                                 <select class="custom-select d-block w-100" id="country" required>
                                   <option value="">Escolher...</option>
-                                  <option>Portugal</option>
+                                  <option selected>Portugal</option>
                                   <option>França</option>
                                   <option>Espanha</option>
                                   <option>Brasil</option>
@@ -165,7 +169,7 @@
                                   <option>Itália</option>
                                 </select>
                                 <div class="invalid-feedback">
-                                    Please select a valid country.
+                                    Seleciona um produto válido.
                                 </div>
                             </div>
                             <div class="col-md-6 mb-3">
@@ -178,38 +182,112 @@
                         </div>
                         <div class="mb-3">
                             <label for="comments">Comentários</label>
-                            <textarea type="text" class="form-control" id="comments"></textarea>
+                            <textarea type="text" class="form-control" id="comments">gosto por coisas ecológicas</textarea>
                         </div>
                         <hr class="mb-4">
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input checkbox-collapse-toogle" id="apresentacao">
+                            <input type="checkbox" class="custom-control-input checkbox-collapse-toogle" id="apresentacao" checked>
                             <label class="custom-control-label" for="apresentacao">Solicitar apresentação</label>
-                            
-                            <div class="products-list checkbox-collapse">
-                        <hr class="mb-4">
-                                <h5>Em que tipo de produto tens interesse?</h5>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="rolha-simples">
-                                <label class="custom-control-label" for="rolha-simples">Rolha simples</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="rolha-reut">
-                                <label class="custom-control-label" for="rolha-reut">Rolha reutilizável</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="rolha-recic">
-                                <label class="custom-control-label" for="rolha-recic">Rolha de Material Reciclado</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="solicitar-ptoposta">
-                                <label class="custom-control-label" for="solicitar-ptoposta">Solicitar proposta</label>
-                            </div>
-                            </div>
-                        
                         </div>
-                        
+                        <div class="products-list ">
+                                <hr class="mb-4">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="produtos">Produto</label>
+                                        <select class="custom-select d-block w-100" id="produtos" required>
+                                          <option value="">Escolher...</option>
+                                          <option selected>Rolha simples</option>
+                                          <option>Rolha reutilizável</option>
+                                          <option>Rolha de material reciclado</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Seleciona um produto.
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3  mb-3">
+                                        <label for="quantity">Quantidade</label>
+                                        <input type="number" class="form-control" id="quantity" placeholder="" value="300">
+                                        <div class="invalid-feedback">
+                                            Insere um valor válido.
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3 col-xs-6 mb-3">
+                                        <label for="frequency">Periodicidade</label>
+                                        <input type="text" class="form-control" id="frequency" placeholder="" value="mensal">
+                                        <div class="invalid-feedback">
+                                            Insere um valor válido.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr class="mb-4">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="produtos">Produto</label>
+                                        <select class="custom-select d-block w-100" id="produtos" required>
+                                          <option value="">--</option>
+                                          <option >Rolha simples</option>
+                                          <option>Rolha reutilizável</option>
+                                          <option>Rolha de material reciclado</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Seleciona um produto.
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3  mb-3">
+                                        <label for="quantity">Quantidade</label>
+                                        <input type="number" class="form-control" id="quantity" placeholder="" value="">
+                                        <div class="invalid-feedback">
+                                            Insere um valor válido.
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3  mb-3">
+                                        <label for="frequency">Periodicidade</label>
+                                        <input type="text" class="form-control" id="frequency" placeholder="" value="">
+                                        <div class="invalid-feedback">
+                                            Insere um valor válido.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr class="mb-4">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="produtos">Produto</label>
+                                        <select class="custom-select d-block w-100" id="produtos" required>
+                                          <option value="">--</option>
+                                          <option >Rolha simples</option>
+                                          <option>Rolha reutilizável</option>
+                                          <option>Rolha de material reciclado</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Seleciona um produto.
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3  mb-3">
+                                        <label for="quantity">Quantidade</label>
+                                        <input type="number" class="form-control" id="quantity" placeholder="" required>
+                                        <div class="invalid-feedback">
+                                            Insere um valor válido.
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3 col-xs-6 mb-3">
+                                        <label for="frequency">Periodicidade</label>
+                                        <input type="text" class="form-control" id="frequency" placeholder="" required>
+                                        <div class="invalid-feedback">
+                                            Insere um valor válido.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                            </div>
+
                         <hr class="mb-4">
-                        <button class="btn btn-primary btn-lg btn-block" type="submit">Enviar</button>
+                        <button class="btn btn-primary btn-lg btn-block" type="submit">Gravar modificações</button>
                     </form>
                 </div>
 
