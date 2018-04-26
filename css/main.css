@@ -72,6 +72,15 @@ body.login{
 
 /* NAVBAR */
 .bg-purple{
-    background-color: #971A35;
+    background: #971a35;
+background: -moz-linear-gradient(45deg, #971a35 0%, #522b96 100%);
+background: -webkit-linear-gradient(45deg, #971a35 0%,#522b96 100%);
+background: linear-gradient(45deg, #971a35 0%,#522b96 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#971a35', endColorstr='#522b96',GradientType=1 );
     
+}
+
+/* TABLE */
+.table a{
+    color:#000;
 }
