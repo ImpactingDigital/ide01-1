@@ -21,7 +21,7 @@
                                 <div class="branding-bar"> <img src="../images/logo-ficticia.png" width="80">
                                 </div>
 	                            <form action="" method="GET" class="hidden">
-                                    <input type="text" name="name" data-conv-question="Olá! Primeiro, diga-me seu nome, por favor.|Por favor, diga-me seu o nome.">
+                                    <input type="text" name="name" data-conv-question="Olá! Primeiro, diga-me seu nome, por favor.|Por favor, diga-me o seu nome.">
                                     <input type="text" data-conv-question="Olá, {name}:0! Antes de mais nada, muito obrigado pelo seu interesse na Fictícia." data-no-answer="true">
 	                                <select name="date" data-conv-question="Aqui vão algumas opções de datas e horários para agendar uma reunião com nossa equipa comercial. <br> Por gentileza, selecione o melhor dia e horário.">
 	                                    <option value="Segunda">Segunda-feira</option>
@@ -40,13 +40,13 @@
 	                                </select>
 	                                <div data-conv-fork="comentario">
 	                                    <div data-conv-case="sim">
-	                                        <input type="text" name="comment" data-conv-question="Qual o seu comentário?">
+	                                        <input type="text" name="comment" data-conv-question="Qual é o seu comentário?">
 	                                    </div>
 	                                    <div data-conv-case="nao">
 		                                    <input type="text" data-conv-question="Sem problemas." data-no-answer="true">
 	                                    </div>
 	                                </div>
-                                    <select data-conv-question="Então nossa reunião está confirmada para {date}:0 às {time}:0 horas">
+                                    <select data-conv-question="Então a nossa reunião está confirmada para {date}:0 às {time}:0 horas">
 											<option value="end" data-callback="end">Ok!</option>
 									</select>
 	                            </form>
