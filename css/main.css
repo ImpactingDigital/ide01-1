@@ -93,7 +93,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#971a35', end
     text-transform: uppercase
 }
 .navbar-brand{
-    text-indent: 60px;
+    text-indent: 80px;
     font-size: .8em;
 }
 .navbar-brand .logo{
@@ -103,8 +103,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#971a35', end
     height:60px;
     position: absolute;
     top:0px;
-    left:0px;
-    background-image: url(../images/logo-ficticia-w.png);
+    left:10px;
+    background-image: url(../images/logo-ficticia-w-s.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
