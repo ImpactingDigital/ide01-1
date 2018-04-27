@@ -187,7 +187,7 @@ ConvState.prototype.answerWith = function(answerText, answerObject) {
         var wrapper = this;
 
         var parameters = $.extend(true, {}, {
-            placeHolder : 'Type Here',
+            placeHolder : 'Digita aqui...',
             typeInputUi : 'textarea',
             timeOutFirstQuestion : 1200,
             buttonClassStyle : 'icon2-arrow',
