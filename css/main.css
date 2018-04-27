@@ -72,6 +72,18 @@ form hr{
     margin-top:40px;
     margin-bottom:40px;
 }
+form.closed label{
+    font-weight: bold;
+    font-size: .8em;
+    color:#aaa;
+    margin-bottom:0;
+    
+}
+form.closed input, form.closed select, form.closed textarea{
+    border:0;
+    padding:0 0 10px 0;
+    cursor:default;
+}
 
 /* NAVBAR */
 .bg-purple{
@@ -113,7 +125,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#971a35', end
 .table a{
     color:#000;
 }
-
+td{
+    font-size: .9em;
+}
+@media screen and (max-width:480px){
+    .table-responsive{
+        margin-left: -20px;
+        margin-left: -20px;
+        width: calc(100% + 40px);
+    }
+}
 
 /* Checkbox collapse */
 .checkbox-collapse-toogle ~ .checkbox-collapse{
@@ -126,4 +147,60 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#971a35', end
         visibility: visible;
         transform: scaleY(1);
     height:auto;
+}
+
+/* DASHBOARD */
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #999;
+}
+
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
 }

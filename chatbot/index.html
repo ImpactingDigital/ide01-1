@@ -32,6 +32,7 @@
 	                                    <option value="10:30">10:30h</option>
                                         <option value="14:00">14:00</option>
 	                                    <option value="16:15">16:15</option>
+	                                    <option value="17">17:00</option>
 	                                </select>
 	                                <select name="comentario" data-callback="storeState" data-conv-question="Tens algum comentário para nosso consultor?">
 	                                    <option value="sim">Sim</option>
@@ -62,11 +63,10 @@
 
 	<script>
 		function end() {
-			window.open("https://ficticia.impactingdigital.com");
+            window.close();
+			window.open("https://ficticia.impacting.digital");
 		}
-		function bing() {
-			window.open("https://bing.com");
-		}
+
 		var rollbackTo = false;
 		var originalState = false;
 		function storeState(stateWrapper) {

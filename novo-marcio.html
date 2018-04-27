@@ -25,8 +25,6 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Vidaloka" rel="stylesheet">
 
-
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68626832-19"></script>
     <script>
@@ -43,15 +41,15 @@
 </head>
 
 <body class="dashboard">
-    <nav class="navbar navbar-dark  bg-purple">
-        <a class="navbar-brand" href="#"><span class="logo">Fictícia</span> | Comercial Platform</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-dark bg-purple">
+      <a class="navbar-brand" href="#"><span class="logo">Fictícia </span> | Comercial</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-        <div class="collapse navbar-collapse" id="navbarsExample01">
-            <ul class="navbar-nav mr-auto text-center">
-                <li class="nav-item ">
+      <div class="collapse navbar-collapse" id="navbarsExample01">
+        <ul class="navbar-nav mr-auto text-center">
+          <li class="nav-item ">
                     <a class="nav-link" href="dashboard.html">Dashboard </a>
                 </li>
                 <li class="nav-item active">
@@ -66,56 +64,62 @@
                 <li class="nav-item">
                     <a class="nav-link" href="login.html">Sair</a>
                 </li>
-            </ul>
-        </div>
+        </ul>
+
+      </div>
     </nav>
+
 
     <div class="container-fluid">
         <div class="row">
             <main role="main" class="col-md-12 col-lg-12 px-4">
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h1">Novo Contacto</h1>
+                    <h1 class="h1">Editar Contacto</h1>
                     <div class="btn-toolbar mb-2 mb-md-0">
                         <div class="btn-group mr-2">
-                            <button class="btn btn-sm btn-outline-secondary">Gravar</button>
+                            <a href="oportunidades.html" class="btn btn-sm btn-outline-secondary">Gravar</a>
                             <button class="btn btn-sm btn-outline-secondary">Exportar</button>
+                            <a href="novo.html" class="btn btn-sm btn-outline-secondary">Novo</a>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="col-md-8 container">
+                <div class="col-md-12 col-lg-8 container">
                     <form>
+                        <div class="mb-3">
+                            <label for="campanha">Status</label>
+                            <select class="custom-select d-block w-100" id="status" required>
+                                  <option value="">Escolher...</option>
+                                  <option>Lead</option>
+                                  <option selected>Proposta</option>
+                                  <option>Qualificado</option>
+                                  <option>Não qualificado</option>
+                                </select>
+                        </div>
                         <div class="mb-3">
                             <label for="campanha">Campanha</label>
                             <select class="custom-select d-block w-100" id="campanha" required>
                                   <option value="">Escolher...</option>
-                                  <option>Feira de Paris</option>
+                                  <option selected>Feira de Paris</option>
                                   <option>Feira de Braga</option>
                                   <option>Evento no Porto</option>
                                   <option>Feira do Vinho em Lisboa</option>
                                   <option>Congresso em Florença</option>
                                 </select>
                         </div>
-                    </form>
-                    <form class="business card text-center" style="background-color:#fdd9ca; padding:15px" action='lead-marcio.html'>
-                        <h4>Scan Business card</h4>
-                        <input style="margin:10px auto 0" type=file name=upfile size=20><br>
-                        <input class="btn btn-primary" type=submit value='Enviar'>
-                    </form>
-                    <hr>
-                    <form class="needs-validation" novalidate>
+                        <hr>
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label for="firstName">Nome</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="Márcio" required>
                                 <div class="invalid-feedback">
                                     Apenas nomes são aceitos.
                                 </div>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label for="lastName">Apelido <span class="text-muted">(Optional)</span></label>
-                                <input type="text" class="form-control" id="lastName" placeholder="" value="">
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="Nogueira">
                                 <div class="invalid-feedback">
                                     É preciso um apelido válido.
                                 </div>
@@ -124,7 +128,7 @@
 
                         <div class="mb-3">
                             <label for="email">Email </label>
-                            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                            <input type="email" class="form-control" id="email" value="marcio.nogueira@impacting.digital" required>
                             <div class="invalid-feedback">
                                 Please enter a valid email address for shipping updates.
                             </div>
@@ -132,7 +136,7 @@
 
                         <div class="mb-3">
                             <label for="mobile">Telemóvel </label>
-                            <input type="phone" class="form-control" id="mobile" placeholder="000 000 000" required>
+                            <input type="phone" class="form-control" id="mobile" placeholder="000 000 000" value="999 999 999">
                             <div class="invalid-feedback">
                                 Por favor, informe um número válido
                             </div>
@@ -140,7 +144,7 @@
 
                         <div class="mb-3">
                             <label for="role">Cargo</label>
-                            <input type="text" class="form-control" id="role" placeholder="" required>
+                            <input type="text" class="form-control" id="role" placeholder="" value="Diretor de Estrategia">
                             <div class="invalid-feedback">
                                 Please enter your role.
                             </div>
@@ -148,7 +152,7 @@
 
                         <div class="mb-3">
                             <label for="business">Empresa</label>
-                            <input type="text" class="form-control" id="business">
+                            <input type="text" class="form-control" id="business" value="Vinho Pixel">
                         </div>
 
                         <div class="row">
@@ -156,7 +160,7 @@
                                 <label for="country">País</label>
                                 <select class="custom-select d-block w-100" id="country" required>
                                   <option value="">Escolher...</option>
-                                  <option>Portugal</option>
+                                  <option selected>Portugal</option>
                                   <option>França</option>
                                   <option>Espanha</option>
                                   <option>Brasil</option>
@@ -164,12 +168,12 @@
                                   <option>Itália</option>
                                 </select>
                                 <div class="invalid-feedback">
-                                    Please select a valid country.
+                                    Seleciona um produto válido.
                                 </div>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label for="faturation">Faturação da Empresa</label>
-                                <input type="number" class="form-control" id="faturation" placeholder="" required>
+                                <input type="number" class="form-control" id="faturation" placeholder="" >
                                 <div class="invalid-feedback">
                                     Insere um valor válido.
                                 </div>
@@ -177,7 +181,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="comments">Comentários</label>
-                            <textarea type="text" class="form-control" id="comments"></textarea>
+                            <textarea type="text" class="form-control" id="comments">gosto por coisas ecológicas</textarea>
                         </div>
                         <hr class="mb-4">
                         <div class="custom-control custom-checkbox">
@@ -202,9 +206,10 @@
                             </div>
 
                         </div>
+                        
 
                         <hr class="mb-4">
-                        <button class="btn btn-primary btn-lg btn-block" type="submit">Enviar</button>
+                        <a href="oportunidades.html" class="btn  btn-lg btn-block btn-primary">Gravar</a>
                     </form>
                 </div>
 
@@ -218,6 +223,12 @@
             <li class="list-inline-item"><a href="#">Termos e condições</a></li>
         </ul>
     </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 

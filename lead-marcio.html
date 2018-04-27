@@ -25,9 +25,6 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Vidaloka" rel="stylesheet">
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68626832-19"></script>
     <script>
@@ -58,7 +55,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="novo.html">Novo</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="oportunidades.html">Oportunidades</a><span class="sr-only">(current)</span>
                 </li>
                 <li class="nav-item">
@@ -72,7 +69,6 @@
       </div>
     </nav>
 
-
     <div class="container-fluid">
         <div class="row">
             <main role="main" class="col-md-12 col-lg-12 px-4">
@@ -80,16 +76,15 @@
                     <h1 class="h1">Márcio Nogueira </h1>
                     <div class="btn-toolbar mb-2 mb-md-0">
                         <div class="btn-group mr-2">
-                            <button class="btn btn-sm btn-outline-secondary">Gravar</button>
+                            <a href="novo-marcio.html" class="btn btn-sm btn-outline-secondary">Editar</a>
                             <button class="btn btn-sm btn-outline-secondary">Exportar</button>
                             <a href="novo.html" class="btn btn-sm btn-outline-secondary">Novo</a>
                         </div>
                     </div>
                 </div>
 
-
                 <div class="col-md-12 col-lg-8 container">
-                    <form>
+                    <form class=closed>
                         <div class="mb-3">
                             <label for="campanha">Status</label>
                             <select class="custom-select d-block w-100" id="status" required>
@@ -121,7 +116,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label for="lastName">Apelido <span class="text-muted">(Optional)</span></label>
+                                <label for="lastName">Apelido </label>
                                 <input type="text" class="form-control" id="lastName" placeholder="" value="Nogueira">
                                 <div class="invalid-feedback">
                                     É preciso um apelido válido.
@@ -131,7 +126,7 @@
 
                         <div class="mb-3">
                             <label for="email">Email </label>
-                            <input type="email" class="form-control" id="email" placeholder="marcio.nogueira@impacting.digital" required>
+                            <input type="email" class="form-control" id="email" value="marcio.nogueira@impacting.digital" required>
                             <div class="invalid-feedback">
                                 Please enter a valid email address for shipping updates.
                             </div>
@@ -176,7 +171,7 @@
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label for="faturation">Faturação da Empresa</label>
-                                <input type="number" class="form-control" id="faturation" placeholder="" required>
+                                <input type="number" class="form-control" id="faturation" placeholder="--" required>
                                 <div class="invalid-feedback">
                                     Insere um valor válido.
                                 </div>
@@ -189,7 +184,7 @@
                         <hr class="mb-4">
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input checkbox-collapse-toogle" id="apresentacao" checked>
-                            <label class="custom-control-label" for="apresentacao">Solicitar apresentação</label>
+                            <label class="custom-control-label" for="apresentacao">Solicitar Proposta</label>
                         </div>
                         <div class="products-list ">
                                 <hr class="mb-4">
@@ -208,14 +203,14 @@
                                     </div>
                                     <div class="col-sm-6 col-md-3  mb-3">
                                         <label for="quantity">Quantidade</label>
-                                        <input type="number" class="form-control" id="quantity" placeholder="" value="300">
+                                        <input type="number" class="form-control" id="quantity" placeholder="--" value="">
                                         <div class="invalid-feedback">
                                             Insere um valor válido.
                                         </div>
                                     </div>
                                     <div class="col-sm-6 col-md-3 col-xs-6 mb-3">
                                         <label for="frequency">Periodicidade</label>
-                                        <input type="text" class="form-control" id="frequency" placeholder="" value="mensal">
+                                        <input type="text" class="form-control" id="frequency" placeholder="--" value="">
                                         <div class="invalid-feedback">
                                             Insere um valor válido.
                                         </div>
@@ -238,14 +233,14 @@
                                     </div>
                                     <div class="col-sm-6 col-md-3  mb-3">
                                         <label for="quantity">Quantidade</label>
-                                        <input type="number" class="form-control" id="quantity" placeholder="" value="">
+                                        <input type="number" class="form-control" id="quantity" placeholder="--" value="">
                                         <div class="invalid-feedback">
                                             Insere um valor válido.
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-3  mb-3">
                                         <label for="frequency">Periodicidade</label>
-                                        <input type="text" class="form-control" id="frequency" placeholder="" value="">
+                                        <input type="text" class="form-control" id="frequency" placeholder="--" value="">
                                         <div class="invalid-feedback">
                                             Insere um valor válido.
                                         </div>
@@ -268,14 +263,14 @@
                                     </div>
                                     <div class="col-sm-6 col-md-3  mb-3">
                                         <label for="quantity">Quantidade</label>
-                                        <input type="number" class="form-control" id="quantity" placeholder="" required>
+                                        <input type="number" class="form-control" id="quantity" placeholder="--" required>
                                         <div class="invalid-feedback">
                                             Insere um valor válido.
                                         </div>
                                     </div>
                                     <div class="col-sm-6 col-md-3 col-xs-6 mb-3">
                                         <label for="frequency">Periodicidade</label>
-                                        <input type="text" class="form-control" id="frequency" placeholder="" required>
+                                        <input type="text" class="form-control" id="frequency" placeholder="--" required>
                                         <div class="invalid-feedback">
                                             Insere um valor válido.
                                         </div>
@@ -307,7 +302,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
 </body>
