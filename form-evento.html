@@ -1,0 +1,87 @@
+<h2 class=green-deco>Inscreva-se já</h2>
+<form id="inscricao" class="id-form" data-smk-form action="https://impactingdigital.smark.io/api.php/directlead/fdee0482b4b815d33d2b2ec4e7d09965a21dfd89" method="post">
+    <input type="hidden" name="redirect_ok" value="https://impacting.digital/obrigado-pelo-contacto/">
+    <input type="hidden" name="redirect_error" value="https://impacting.digital/ocorreu-um-erro/">
+    <input type="hidden" name="flag[smk_update_different_campaign]" value="1">
+    <input type="hidden" name="extra[contact_language]" value="pt">
+    <input type="hidden" name="extra[company_country]" value="portugal">
+    <input type="hidden" name="extra[id_solution]" value="third_stage">
+    <input type="hidden" name="extra[id_solution_area]" value="third_stage_three">
+    <input type="hidden" name="extra[id_event_name]" value="Automação para a angariação de potenciais clientes em feiras e eventos">
+    <div class="final-form">
+        <div class="row">
+            <div class="col-md-6">
+                <input placeholder="Nome*" type="text" name="lead[first_name]" required></div>
+            <div class="col-md-6">
+                <input placeholder="Apelido*" type="text" name="lead[last_name]" required></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <input placeholder="Email*" type="email" name="lead[email]" required></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <input placeholder="Empresa*" type="text" name="extra[company]" required></div>
+            <div class="col-md-6">
+                <input placeholder="Telemóvel*" type="tel" name="lead[phone]" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <select class="selectpicker arrow-select" name="extra[contact_role]" required>
+                    <option value="" disabled selected>Cargo*</option>
+                    <option label="Presidente" value="C-Level">Presidente</option>
+                    <option label="Administrador" value="Administrator">Administrador</option>
+                    <option label="Diretor" value="Director">Diretor</option>
+                    <option label="Gestor" value="Manager">Gestor</option>
+                    <option label="Colaborador" value="Collaborator">Colaborador</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <select class="selectpicker" name="extra[contact_role_area]">
+                    <option value="" disabled selected>Área</option>
+                    <option label="Administrativo" value="administrative">Administrativo</option>
+                    <option label="Comercial" value="commercial">Comercial</option>
+                    <option label="Comunicação" value="communications">Comunicação</option>
+                    <option label="Financeiro" value="finance">Financeiro</option>
+                    <option label="Geral / Executivo" value="executive"> Geral / Executivo</option>
+                    <option label="Jurídico" value="legal">Jurídico</option>
+                    <option label="Marketing" value="marketing">Marketing</option>
+                    <option label="Operações" value="operations">Operações</option>
+                    <option label="Produção" value="production">Produção</option>
+                    <option label="Recursos Humanos" value="human resources">Recursos Humanos</option>
+                    <option label="Tecnológico" value="technologic">Tecnológico</option>
+                    <option label="Outro" value="other">Outro</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <label for="select_cidade">Cidade em que quer assistir ao evento*</label>
+                <select id="select_cidade" class="selectpicker arrow-select" name="extra[ide01_place]" required>
+                    <option value="" disabled selected>-</option>
+                    <option label="Porto 29-05-2018" value="porto_29_05">Porto 29-05-2018</option>
+                    <option label="Lisboa 04-06-2018" value="lisboa_04_06">Lisboa 04-06-2018</option>
+                    <!--<option label="Amarante 01-06-2018" value="amarante_01_06">Amarante 01-06-2018</option>-->
+                </select>
+                <label for="select_cidade">Reunião um para um no final da apresentação?</label>
+                <select id="1to1" class="selectpicker arrow-select" name="extra[ide01_1to1]">
+                    <option value="" disabled selected>-</option>
+                    <option label="Sim" value="yes">Sim</option>
+                    <option label="Não" value="no">Não</option>
+                </select>
+            </div>
+        </div>
+        <p style="color:black; font-size:12px; padding-left:5px; opacity:0.5;  vertical-align:text-bottom;">*campo obrigatório</p>
+        <div class="gdpr-form">
+            <div class="checkbox">
+              <label><input type="checkbox" value="" name="opt2" required checked>Como consultores digitais recomendamos que leia e aceite os nossos <a href="/termos-e-condicoes-do-servico/" target="_blank">termos e condições</a>.</label>
+            </div>
+        </div>
+    </div>
+    <div class="form-buttons">
+        <div class="text-center">
+            <button class="button green" type="submit">Submeter</button>
+        </div>
+    </div>
+</form>

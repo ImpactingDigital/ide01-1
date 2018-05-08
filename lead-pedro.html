@@ -1,0 +1,314 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Fictícia</title>
+    <link rel="apple-touch-icon-precomposed" href="images/logo-ficticia.png">
+    <link rel="icon" href="images/logo-ficticia.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta property="og:locale" content="pt_PT">
+    <meta property="og:url" content="https://ficticia.impacting.digital">
+    <meta property="og:title" content="Corticeira">
+    <meta property="og:site_name" content="Fictícia">
+    <meta property="og:description" content="Esta é uma empresa fictícia">
+    <meta property="og:image" content="images/wine-ficticia-01.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="600">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Vidaloka" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68626832-19"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-68626832-19');
+    </script>
+
+</head>
+
+<body class="dashboard">
+    <nav class="navbar navbar-dark bg-purple">
+      <a class="navbar-brand" href="#"><span class="logo">Fictícia </span> | Comercial</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample01">
+        <ul class="navbar-nav mr-auto text-center">
+          <li class="nav-item ">
+                    <a class="nav-link" href="dashboard.html">Dashboard </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="novo.html">Novo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="oportunidades.html">Oportunidades</a><span class="sr-only">(current)</span>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="clientes.html">Clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Sair</a>
+                </li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <main role="main" class="col-md-12 col-lg-12 px-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h1">Pedro Amor</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group mr-2">
+                            <a href="novo-marcio.html" class="btn btn-sm btn-outline-secondary">Editar</a>
+                            <button class="btn btn-sm btn-outline-secondary">Exportar</button>
+                            <a href="novo.html" class="btn btn-sm btn-outline-secondary">Novo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-8 container">
+                    <form class=closed>
+                        <div class="mb-3">
+                            <label for="campanha">Status</label>
+                            <select class="custom-select d-block w-100" id="status" required>
+                                  <option value="">Escolher...</option>
+                                  <option>Lead</option>
+                                  <option selected>Proposta</option>
+                                  <option>Qualificado</option>
+                                  <option>Não qualificado</option>
+                                  <option>Venda concluída</option>
+                                </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="campanha">Campanha</label>
+                            <select class="custom-select d-block w-100" id="campanha" required>
+                                  <option value="">Escolher...</option>
+                                  <option selected>Feira de Paris</option>
+                                  <option>Feira de Braga</option>
+                                  <option>Evento no Porto</option>
+                                  <option>Feira do Vinho em Lisboa</option>
+                                  <option>Congresso em Florença</option>
+                                </select>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName">Nome</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="Pedro" required>
+                                <div class="invalid-feedback">
+                                    Apenas nomes são aceitos.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName">Apelido </label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="Amor">
+                                <div class="invalid-feedback">
+                                    É preciso um apelido válido.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email">Email </label>
+                            <input type="email" class="form-control" id="email" value="pedro.amor@vinhopixel.com" required>
+                            <div class="invalid-feedback">
+                                Please enter a valid email address for shipping updates.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="mobile">Telemóvel </label>
+                            <input type="phone" class="form-control" id="mobile" placeholder="000 000 000" value="999 999 999">
+                            <div class="invalid-feedback">
+                                Por favor, informe um número válido
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="role">Cargo</label>
+                            <input type="text" class="form-control" id="role" placeholder="" value="Diretor comercial">
+                            <div class="invalid-feedback">
+                                Please enter your role.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="business">Empresa</label>
+                            <input type="text" class="form-control" id="business" value="Vinho Pixel">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="country">País</label>
+                                <select class="custom-select d-block w-100" id="country" required>
+                                  <option value="">Escolher...</option>
+                                  <option selected>Portugal</option>
+                                  <option>França</option>
+                                  <option>Espanha</option>
+                                  <option>Brasil</option>
+                                  <option>África do Sul</option>
+                                  <option>Itália</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Seleciona um produto válido.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="faturation">Faturação da Empresa</label>
+                                <input type="number" class="form-control" id="faturation" placeholder="--" >
+                                <div class="invalid-feedback">
+                                    Insere um valor válido.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="comments">Comentários</label>
+                            <textarea type="text" class="form-control" id="comments"></textarea>
+                        </div>
+                        <hr class="mb-4">
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input checkbox-collapse-toogle" id="apresentacao">
+                            <label class="custom-control-label" for="apresentacao">Proposta comercial</label>
+
+                            <div class="products-list checkbox-collapse">
+                                <hr class="mb-4">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="produtos">Produto</label>
+                                        <select class="custom-select d-block w-100" id="produtos" required>
+                                          <option value="">Escolher...</option>
+                                          <option >Rolha simples</option>
+                                          <option>Rolha reutilizável</option>
+                                          <option selected>Rolha de material reciclado</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Seleciona um produto.
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3  mb-3">
+                                        <label for="quantity">Quantidade</label>
+                                        <input type="number" class="form-control" id="quantity" placeholder="--" value="">
+                                        <div class="invalid-feedback">
+                                            Insere um valor válido.
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3 col-xs-6 mb-3">
+                                        <label for="frequency">Periodicidade</label>
+                                        <input type="text" class="form-control" id="frequency" placeholder="--" value="">
+                                        <div class="invalid-feedback">
+                                            Insere um valor válido.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr class="mb-4">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="produtos">Produto</label>
+                                        <select class="custom-select d-block w-100" id="produtos" required>
+                                          <option value="">--</option>
+                                          <option >Rolha simples</option>
+                                          <option>Rolha reutilizável</option>
+                                          <option>Rolha de material reciclado</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Seleciona um produto.
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3  mb-3">
+                                        <label for="quantity">Quantidade</label>
+                                        <input type="number" class="form-control" id="quantity" placeholder="--" value="">
+                                        <div class="invalid-feedback">
+                                            Insere um valor válido.
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-3  mb-3">
+                                        <label for="frequency">Periodicidade</label>
+                                        <input type="text" class="form-control" id="frequency" placeholder="--" value="">
+                                        <div class="invalid-feedback">
+                                            Insere um valor válido.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr class="mb-4">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="produtos">Produto</label>
+                                        <select class="custom-select d-block w-100" id="produtos" required>
+                                          <option value="">--</option>
+                                          <option>Rolha simples</option>
+                                          <option>Rolha reutilizável</option>
+                                          <option>Rolha de material reciclado</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Seleciona um produto.
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3  mb-3">
+                                        <label for="quantity">Quantidade</label>
+                                        <input type="number" class="form-control" id="quantity" placeholder="--" required>
+                                        <div class="invalid-feedback">
+                                            Insere um valor válido.
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3 col-xs-6 mb-3">
+                                        <label for="frequency">Periodicidade</label>
+                                        <input type="text" class="form-control" id="frequency" placeholder="--" required>
+                                        <div class="invalid-feedback">
+                                            Insere um valor válido.
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="mb-4">
+                                <a class="btn btn-primary btn-lg btn-block" href="oportunidades.html">Enviar proposta</a>
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+                    </form>
+                </div>
+
+            </main>
+        </div>
+    </div>
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2018 Uma empresa Fictícia</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="index.html">Polítics de Privacidade</a></li>
+            <li class="list-inline-item"><a href="#">Termos e condições</a></li>
+        </ul>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
