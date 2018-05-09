@@ -21,8 +21,8 @@
                                 <div class="branding-bar"> <img src="../images/logo-ficticia.png" width="80">
                                 </div>
 	                            <form action="" method="GET" class="hidden">
-                                    <input type="text" data-conv-question="Olá, Márcio! Confirmamos a sua reunião com nosso consultor comercial na Segunda-feira às 16:00 horas." data-no-answer="true">
-	                                <select name="confirmacao" data-callback="storeState" data-conv-question="Olá, Pedro! Confirmamos a sua reunião com nosso consultor comercial na Segunda-feira às 16:00 horas.">
+                                <!-- <input type="text" data-conv-question="Olá, Márcio! Confirmamos a sua reunião com nosso consultor comercial na Segunda-feira às 16:00 horas." data-no-answer="true">-->
+	                                <select name="confirmacao" data-callback="storeState" data-conv-question="Olá, Pedro! Confirmamos a sua reunião com nosso consultor comercial na Quarta-feira às 16:15 horas.">
 	                                    <option value="sim">Sim</option>
 	                                    <option value="nao">Não</option>
 	                                </select>
@@ -66,7 +66,7 @@
 	<script>
 		function end() {
             window.close();
-			window.open("https://ficticia.impacting.digital");
+			window.open("https://ficticia.impacting.digital/chatbot/obrigado.html");
 		}
 		var rollbackTo = false;
 		var originalState = false;
