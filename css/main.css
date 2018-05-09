@@ -128,6 +128,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#971a35', end
 td{
     font-size: .9em;
 }
+.table-leads thead{
+    color:#888;
+    font-size: .8em
+
+}
+.table-leads tr:nth-child(1) td{
+    background-color:#ffffff;
+    font-weight: bolder;
+}
+.table-leads tr td{
+    background-color:#f1f2f3;
+}
 @media screen and (max-width:480px){
     .table-responsive{
         margin-left: -20px;
