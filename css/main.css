@@ -1,12 +1,14 @@
 /* GENERAL */
 body {
 font-family: 'Open Sans', sans-serif;
+    background-color:#f4f0e5;
 }
 html{
     height:100%;
 }
 h1,h2,h3, .h1,.h2,.h3{
     font-family: 'Vidaloka', serif;
+    color:#8C7452;
 }
 
 /* Signin */
@@ -89,11 +91,13 @@ form.closed input, form.closed select, form.closed textarea{
 /* NAVBAR */
 .bg-purple{
     background: #971a35;
+/*
 background: -moz-linear-gradient(45deg, #971a35 0%, #522b96 100%);
 background: -webkit-linear-gradient(45deg, #971a35 0%,#522b96 100%);
 background: linear-gradient(45deg, #971a35 0%,#522b96 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#971a35', endColorstr='#522b96',GradientType=1 );
     
+*/
 }
 
 .navbar-toggler:focus, .navbar-toggler:hover{
@@ -139,7 +143,7 @@ td{
     font-weight: bolder;
 }
 .table-leads tr td{
-    background-color:#f1f2f3;
+
 }
 @media screen and (max-width:480px){
     .table-responsive{
@@ -168,9 +172,10 @@ input[type='checkbox'].checkbox-collapse-toogle {
     color:#000;
     padding:10px;
     border-radius:4px;
-    background: #e1e2e3;
+    background: #e0d7bf;
     cursor: pointer;
     text-transform: uppercase;
+    transition: all .2s ease;
 }
 .checkbox-collapse-toogle ~ label.btn-check:hover{
     background-color:#fff;
@@ -189,6 +194,7 @@ input[type='checkbox'].checkbox-collapse-toogle {
 
 .sidebar {
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  background-color: #cac1ad
 }
 
 .sidebar-sticky {
@@ -218,7 +224,9 @@ input[type='checkbox'].checkbox-collapse-toogle {
 }
 
 .sidebar .nav-link.active {
-  color: #007bff;
+  color: #fff;
+  font-weight: bold;
+ background-color:rgba(140, 116, 82,.5);
 }
 
 .sidebar .nav-link:hover .feather,
@@ -238,4 +246,17 @@ input[type='checkbox'].checkbox-collapse-toogle {
 }
 
 
+/* GRÀFICO */
+.chartjs-render-monitor{
+    background-color:#fff;
+    padding:15px;
+    border-radius:8px;
+    box-shadow:0 2px 8px rgba(140, 116, 82,.5);
+}
 
+/* Container card */
+.container.card{
+    padding:15px 20px;
+    box-shadow:0 2px 8px rgba(140, 116, 82,.5);
+
+}
