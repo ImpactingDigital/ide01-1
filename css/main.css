@@ -89,6 +89,16 @@ form.closed input, form.closed select, form.closed textarea{
 }
 
 /* NAVBAR */
+.navbar.bg-purple{
+    padding:0;
+    background: #971a35;
+}
+.navbar.bg-purple .navbar-collapse{
+    background: #711529;
+    border-top:1px solid #620d1f;
+    margin-top:0;
+}
+
 .bg-purple{
     background: #971a35;
 /*
@@ -99,18 +109,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#971a35', end
     
 */
 }
-
-.navbar-toggler:focus, .navbar-toggler:hover{
+.navbar-toggler{
+    margin:10px;
+}
+.navbar-toggler:focus{
+    background-color: rgba(0,0,0,.2);
+    outline: 0
+}
+.navbar-toggler:hover{
     outline-color: #fff;
 }
-
 .navbar-collapse{
     border-top:1px solid rgba(255,255,255,.3);
     margin-top:10px;
     text-transform: uppercase
 }
 .navbar-brand{
-    text-indent: 80px;
+    text-indent: 88px;
     font-size: .8em;
 }
 .navbar-brand .logo{
@@ -126,6 +141,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#971a35', end
     background-repeat: no-repeat;
     background-position: center;
 }
+.nav-item:hover{
+    background-color:rgba(255,255,255,.05)
+}
+.nav-item:active{
+    background-color:rgba(0,0,0,.1)
+}
 /* TABLE */
 .table a{
     color:#000;
@@ -138,7 +159,7 @@ td{
     font-size: .8em
 
 }
-.table-leads tr:nth-child(1) td{
+.table-leads tr.newlead td{
     background-color:#ffffff;
     font-weight: bolder;
 }
