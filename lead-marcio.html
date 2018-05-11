@@ -87,7 +87,7 @@
                         <div class="mb-3">
                             <label for="campanha">Status</label>
                             <select class="custom-select d-block w-100" id="status" required>
-                                  <option>Escolher...</option>
+                                  <option>--</option>
                                   <option selected>Lead</option>
                                   <option >Proposta</option>
                                   <option>Negotiation</option>
@@ -197,79 +197,31 @@
                                     </div>
                                     <div class="col-sm-6 col-md-3  mb-3">
                                         <label for="quantity">Quantidade</label>
-                                        <input type="number" class="form-control" id="quantity" placeholder="--" value="">
+                                        <select class="custom-select d-block w-100" id="quantity" required>
+                                          <option value="">--</option>
+                                          <option>300</option>
+                                          <option>600</option>
+                                          <option>1000</option>
+                                           <option>5000</option>
+                                        </select>
                                         <div class="invalid-feedback">
                                             Insere um valor válido.
                                         </div>
                                     </div>
                                     <div class="col-sm-6 col-md-3 col-xs-6 mb-3">
                                         <label for="frequency">Periodicidade</label>
-                                        <input type="text" class="form-control" id="frequency" placeholder="--" value="">
+                                        <select class="custom-select d-block w-100" id="frequency" required>
+                                          <option value="">--</option>
+                                          <option>Semanal</option>
+                                          <option>Mensal</option>
+                                          <option>Trimestral</option>
+                                        </select>
                                         <div class="invalid-feedback">
                                             Insere um valor válido.
                                         </div>
                                     </div>
                                 </div>
 
-                                <hr class="mb-4">
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <label for="produtos">Produto</label>
-                                        <select class="custom-select d-block w-100" id="produtos" required>
-                                          <option value="">--</option>
-                                          <option>Rolha simples</option>
-                                          <option>Rolha reutilizável</option>
-                                          <option>Rolha de material reciclado</option>
-                                        </select>
-                                        <div class="invalid-feedback">
-                                            Seleciona um produto.
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-3  mb-3">
-                                        <label for="quantity">Quantidade</label>
-                                        <input type="number" class="form-control" id="quantity" placeholder="--" value="">
-                                        <div class="invalid-feedback">
-                                            Insere um valor válido.
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-3  mb-3">
-                                        <label for="frequency">Periodicidade</label>
-                                        <input type="text" class="form-control" id="frequency" placeholder="--" value="">
-                                        <div class="invalid-feedback">
-                                            Insere um valor válido.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <hr class="mb-4">
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <label for="produtos">Produto</label>
-                                        <select class="custom-select d-block w-100" id="produtos" required>
-                                          <option value="">--</option>
-                                          <option>Rolha simples</option>
-                                          <option>Rolha reutilizável</option>
-                                          <option>Rolha de material reciclado</option>
-                                        </select>
-                                        <div class="invalid-feedback">
-                                            Seleciona um produto.
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-3  mb-3">
-                                        <label for="quantity">Quantidade</label>
-                                        <input type="number" class="form-control" id="quantity" placeholder="--" required>
-                                        <div class="invalid-feedback">
-                                            Insere um valor válido.
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-3 col-xs-6 mb-3">
-                                        <label for="frequency">Periodicidade</label>
-                                        <input type="text" class="form-control" id="frequency" placeholder="--" required>
-                                        <div class="invalid-feedback">
-                                            Insere um valor válido.
-                                        </div>
-                                    </div>
-                                </div>
                                 <hr class="mb-4">
                                 <a class="btn btn-primary btn-lg btn-block" href="oportunidades.html">Enviar proposta</a>
                             </div>
