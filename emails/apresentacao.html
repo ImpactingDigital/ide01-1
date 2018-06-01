@@ -137,17 +137,17 @@
         background: #522B96 !important;
         border-color: #522B96 !important;
     }
-
+    .email-container p {
+        font-size: 18px !important;
+    }
     /* Media Queries */
     @media screen and (max-width: 600px) {
-
         /* What it does: Adjust typography on small screens to improve readability */
         .email-container p {
-            font-size: 17px !important;
+            font-size: 20px !important;
+            line-height: 24px;
         }
-
     }
-
     </style>
     <!-- Progressive Enhancements : END -->
 
@@ -160,7 +160,6 @@
         </o:OfficeDocumentSettings>
     </xml>
     <![endif]-->
-
 </head>
 <!--
 	The email background color (#222222) is defined in three places:
@@ -175,26 +174,23 @@
     <tr>
     <td>
     <![endif]-->
-
         <!-- Visually Hidden Preheader Text : BEGIN -->
         <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
             Obrigado pelo seu interesse em nossa empresa, enviamos nesta mensagem a apresentação da Fictícia Corticeira para que possas conhecer melhor nossos produtos.
         </div>
         <!-- Visually Hidden Preheader Text : END -->
-
         <!-- Create white space after the desired preview text so email clients don’t pull other distracting text into the inbox preview. Extend as necessary. -->
         <!-- Preview Text Spacing Hack : BEGIN -->
         <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
 	        &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
         </div>
         <!-- Preview Text Spacing Hack : END -->
-
         <!--
             Set the email width. Defined in two places:
             1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 600px.
             2. MSO tags for Desktop Windows Outlook enforce a 600px width.
         -->
-        <div style="max-width: 300px; margin: auto;" class="email-container">
+        <div style="max-width: 280px; margin: auto;" class="email-container">
             <!--[if mso]>
             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="300" align="center">
             <tr>
@@ -205,23 +201,20 @@
             <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;">
                 <tr>
                     <td style="padding: 20px 0; text-align: center">
-                        <img src="logo-ficticia-s.png" width="160" height="50" alt="alt_text" border="0" style="height: auto; font-family: sans-serif; font-size: 15px; line-height: 140%; color: #555555;">
+                        <img src="logo-ficticia-s.png" width="160" height="50" alt="Fictícia " border="0" style="height: auto; font-family: sans-serif; font-size: 15px; line-height: 140%; color: #555555;">
                     </td>
                 </tr>
             </table>
             <!-- Email Header : END -->
-
             <!-- Email Body : BEGIN -->
             <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;">
-
                 <!-- Hero Image, Flush : BEGIN -->
                 <tr>
                     <td bgcolor="#ffffff" align="center">
-                        <img src="wine-ficticia-02.jpg" width="600" height="" alt="alt_text" border="0" align="center" style="width: 100%; max-width: 600px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 140%; color: #555555; margin: auto;" class="g-img">
+                        <img src="wine-ficticia-02.jpg" width="280" height="" alt="corticeira" border="0" align="center" style="width: 100%; max-width: 280px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 140%; color: #555555; margin: auto;" class="g-img">
                     </td>
                 </tr>
                 <!-- Hero Image, Flush : END -->
-
                 <!-- 1 Column Text + Button : BEGIN -->
                 <tr>
                     <td bgcolor="#ffffff">
@@ -254,7 +247,6 @@
                             </tr>
                             <tr>
                                 <td style="padding: 40px; font-family: sans-serif; font-size: 15px; line-height: 140%; color: #555555;">
-                                    
                                     <p style="margin: 0;">Estamos em contacto,</p>
                                     <p style="margin: 0; font-weight: bold">Equipa Comercial Fictícia</p>
                                 </td>
